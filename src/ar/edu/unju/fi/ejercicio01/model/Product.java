@@ -3,7 +3,7 @@ package ar.edu.unju.fi.ejercicio01.model;
 public class Product {
 	private String codigo;
 	private String descripcion;
-	private double precio;
+	private double nuevoPre;
 	private OrigenFabricacion origenFabricacion;
 	private Categoria categoria;
 	
@@ -14,7 +14,7 @@ public class Product {
 	public Product(String codigo, String descripcion, double precio) {
 		this.codigo = codigo;
 		this.descripcion = descripcion;
-		this.precio = precio;
+		this.nuevoPre = precio;
 	}
 
 	public String getCodigo() {
@@ -34,11 +34,11 @@ public class Product {
 	}
 
 	public double getPrecio() {
-		return precio;
+		return nuevoPre;
 	}
 
 	public void setPrecio(double precio) {
-		this.precio = precio;
+		this.nuevoPre = precio;
 	}	
 	
 	 public OrigenFabricacion getOrigenFabricacion() {
