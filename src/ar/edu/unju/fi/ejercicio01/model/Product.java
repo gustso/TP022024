@@ -11,10 +11,12 @@ public class Product {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Product(String codigo, String descripcion, double precio) {
+	public Product(String codigo, String descripcion, double precio, OrigenFabricacion origenFabricacion, Categoria categoria) {
 		this.codigo = codigo;
 		this.descripcion = descripcion;
 		this.precio = precio;
+		this.origenFabricacion = origenFabricacion;
+		this.categoria = categoria;
 	}
 
 	public String getCodigo() {
