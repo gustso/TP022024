@@ -3,7 +3,7 @@ package ar.edu.unju.fi.ejercicio01.model;
 public class Product {
 	private String codigo;
 	private String descripcion;
-	private double precio;
+	private double nuevoPre;
 	private OrigenFabricacion origenFabricacion;
 	private Categoria categoria;
 	
