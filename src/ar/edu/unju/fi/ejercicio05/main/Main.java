@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.DoubleStream;
 
@@ -39,6 +40,10 @@ public class Main {
         //    }
         //}
         //return productosFiltrados;
+		
+		//interface funcional Predicate en formato de expresión lambda
+		//Predicate<Producto> predicado = producto -> producto.isEstado();
+		//productos.stream().filter(predicado).collect(Collectors.toList());
         
         return productos.stream()
                 .filter(producto -> producto.isEstado())
