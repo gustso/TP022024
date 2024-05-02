@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.DoubleStream;
 
@@ -39,10 +40,15 @@ public class Main {
         //    }
         //}
         //return productosFiltrados;
-        
+        Predicate<Producto> condicion = p->p.isEstado();
+		
         return productos.stream()
-                .filter(producto -> producto.isEstado())
+                .filter(condicion)
                 .collect(Collectors.toList());
+        
+        //return productos.stream()
+        //        .filter(producto -> producto.isEstado())
+        //        .collect(Collectors.toList());
     }
 	
 	public static double calcularPrecioTotal(List<Producto> productos) {
